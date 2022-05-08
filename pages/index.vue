@@ -29,7 +29,7 @@ export default {
     }
   },
   mounted(){
-    this.fastDiv = this.$refs.fast.getBoundingClientRect();
+    this.fastDiv = this.$refs.fast.getBoundingClientRect()
     this.secondDiv = this.$refs.second.getBoundingClientRect()
     this.thirdDiv = this.$refs.third.getBoundingClientRect()
     this.fordDiv = this.$refs.ford.getBoundingClientRect()
@@ -37,7 +37,6 @@ export default {
   },
   methods: {
     returnScroll(value) {
-      console.log(value)
       if(value == 1){
         window.scrollTo({
           top: this.fastDiv.y,
